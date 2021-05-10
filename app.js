@@ -21,7 +21,7 @@ var uiController = (function() {
       ctrlAddItem();
     });
     document.addEventListener("keypress", function(event) {
-      if (event.key === 13 | | event.which === 13) {
+      if (event.key === 13 || event.which === 13) {
         ctrlAddItem();
       }
     } );
