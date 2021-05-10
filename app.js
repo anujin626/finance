@@ -16,11 +16,12 @@ var uiController = (function() {
         //4.төсвийг тооцно
         //5.эцсийн үлдэглэл
     };
+
     document.querySelector(".add__btn").addEventListener("click", function() {
       ctrlAddItem();
     });
     document.addEventListener("keypress", function(event) {
-      if (event.keyCode === 13) {
+      if (event.key === 13 | | event.which === 13) {
         ctrlAddItem();
       }
     } );
